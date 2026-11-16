@@ -10,7 +10,7 @@ button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:
 a{color:inherit}.shell{width:min(1180px,calc(100% - 44px));margin-inline:auto}
 .skip{position:absolute;left:-9999px;top:10px;z-index:10;background:#fff;padding:10px}.skip:focus{left:10px}
 .masthead{border-bottom:1px solid var(--line);background:var(--card);padding-top:17px}
-.brand-panel{width:min(100%,600px);margin:0 auto 12px;padding:28px 16px 22px;text-align:center;background:#f8f6ef;color:#253d35;border:1px solid #e7e0d3;border-radius:13px}
+.brand-panel{width:100%;margin:0 0 12px;padding:28px 16px 22px;text-align:center;background:#f8f6ef;color:#253d35;border:1px solid #e7e0d3;border-radius:13px}
 .panoply-label{display:block;width:max-content;margin:0 auto 21px;font:600 6.5px/1.5 var(--sans);letter-spacing:3.2px;color:rgba(171,137,87,.43);text-decoration:none}
 .panoply-label:hover{color:#ab8957}
 .wordmark{display:flex;flex-direction:column;align-items:center;white-space:nowrap;margin:0}
@@ -69,8 +69,14 @@ a.recipe-publisher:hover{text-decoration:underline}
 @media(max-width:570px){.shell{width:calc(100% - 34px)}.masthead{padding-top:13px}.brand-panel{padding:23px 8px 18px;margin-bottom:10px}.panoply-label{font-size:6px;letter-spacing:2.8px;margin-bottom:16px}.wordmark-le{font-size:32px}.wordmark-name{font-size:clamp(28px,7.8vw,35px);letter-spacing:-1.2px}.ornament{margin-top:13px}.ornament-rule{width:50px}.ornament-flourish{font-size:23px}.tabs{justify-content:flex-start}.panel{padding-top:25px}.section-heading{align-items:center}.recipe-grid,.saved-list,.grocery-layout{grid-template-columns:1fr}.recipe-photo{aspect-ratio:1.65}.recipe-title{font-size:23px}.recipe-card{border-radius:12px}.recipe-body{padding:13px}.selection-count strong{font-size:24px}}
 @media(prefers-color-scheme:dark){
 :root{color-scheme:dark;--paper:#1c211e;--card:#252d27;--ink:#e7ebe5;--muted:#a9b6a9;--line:#465047;--gold:#d4b985;--accent:#9fc7a8;--accent-soft:#283d30;--placeholder:#313a31}
-/* The approved cream wordmark panel retains its exact colors in both themes. */
-.brand-panel{background:#f8f6ef;color:#253d35;border-color:#e7e0d3}
+/* The title carrier follows dark mode while keeping the approved layout and typographic hierarchy. */
+.brand-panel{background:#24322a;color:#f0ede4;border-color:#485a4d}
+.wordmark-name{color:#f0ede4}
+.wordmark-le{color:#d4b985}
+.panoply-label{color:rgba(212,185,133,.58)}
+.panoply-label:hover{color:#d4b985}
+.ornament{color:#d4b985}
+.ornament-rule{background:#897855}
 .pick-button{background:#2b372d;color:var(--ink);border-color:#617566}.pick-button.is-selected{background:#3b7151;color:#fff;border-color:#6aa783}
 .photo-pending{color:#b9c4b8}.photo-pending svg{stroke:#8d9a8b}
 }

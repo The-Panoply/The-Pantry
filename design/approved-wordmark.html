@@ -5,11 +5,20 @@
 <title>Le Garde-Manger — Approved Wordmark Reference</title>
 <style>
 body{background:#faf9f6;margin:0;padding:22px;box-sizing:border-box}
-.frame{max-width:620px;margin:0 auto}
+.frame{width:100%;max-width:1180px;margin:0 auto}
 .note{font:12px -apple-system,BlinkMacSystemFont,sans-serif;color:#777;margin:18px auto;max-width:620px}
 .panoply{font:600 6.5px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:3.2px;color:rgba(171,137,87,.43);margin-bottom:21px}
 .le{font:italic 40px/1 'Bodoni 72','Didot','Baskerville',Georgia,serif;color:#b18a55;margin-bottom:-4px}
 .name{font:400 clamp(37px,7.4vw,68px)/1.12 'Didot','Bodoni 72','Baskerville',Georgia,serif;letter-spacing:-1.5px}
+@media(prefers-color-scheme:dark){
+body{background:#1c211e;color:#e7ebe5}
+.frame > div{background:#24322a!important;color:#f0ede4!important;border-color:#485a4d!important}
+.panoply{color:rgba(212,185,133,.58)}
+.le{color:#d4b985}
+.name{color:#f0ede4}
+.frame .ornament-preview{color:#d4b985!important}
+.note{color:#a9b6a9}
+}
 @media(max-width:570px){.panoply{font-size:6px;letter-spacing:2.8px;margin-bottom:16px}.le{font-size:32px}.name{font-size:clamp(28px,7.8vw,35px);letter-spacing:-1.2px}}
 </style>
 <div class="frame">
@@ -17,10 +26,10 @@ body{background:#faf9f6;margin:0;padding:22px;box-sizing:border-box}
     <div class="panoply">THE PANOPLY</div>
     <div class="le">Le</div>
     <div class="name">Garde-Manger</div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px;color:#ae8c5a">
+    <div class="ornament-preview" style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px;color:#ae8c5a">
       <span style="width:64px;height:1px;background:#c9ae82"></span><span style="font:25px Georgia,serif">❧</span><span style="width:64px;height:1px;background:#c9ae82"></span>
     </div>
   </div>
 </div>
-<p class="note">Approved design reference. The historic first mockup is preserved in BRAND_BASELINE.md, with the two subsequently approved adjustments: fainter, smaller Panoply; reduced mobile title size.</p>
+<p class="note">Approved design reference. The original light-mode mockup is preserved verbatim in BRAND_BASELINE.md. Approved adjustments: quieter Panoply, smaller mobile title, full-width title panel and device-responsive dark mode.</p>
 </html>
