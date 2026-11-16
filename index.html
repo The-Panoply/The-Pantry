@@ -11,7 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=20261115-dark-width">
+  <link rel="stylesheet" href="./styles.css?v=20261115-full-bleed">
   <script defer src="./app.js"></script>
 </head>
 <body>
@@ -53,10 +53,7 @@
         <div id="selected-list" aria-live="polite"><p class="empty-state">No meals selected.</p></div>
       </section>
     </section>
-    <section id="panel-saved" class="panel" aria-labelledby="saved-heading" hidden>
-      <div class="section-heading">
-        <div><p class="eyebrow">APPLE NEWS</p><h1 id="saved-heading">Saved Recipes</h1></div>
-      </div>
+    <section id="panel-saved" class="panel" aria-label="Saved Recipes" hidden>
       <div class="saved-tools">
         <label class="visually-hidden" for="saved-search">Search recipes</label>
         <input id="saved-search" type="search" placeholder="Search recipes" autocomplete="off">
@@ -65,10 +62,8 @@
         <span id="saved-count" class="saved-count"></span>
       </div>
       <div id="saved-list" class="saved-list"></div>
-      <p class="fineprint">Saved from Apple News. A saved recipe does not mean it has been cooked or family-approved.</p>
     </section>
-    <section id="panel-groceries" class="panel" aria-labelledby="grocery-heading" hidden>
-      <div class="section-heading"><div><p class="eyebrow">MEAL PLANNING</p><h1 id="grocery-heading">Groceries</h1></div></div>
+    <section id="panel-groceries" class="panel" aria-label="Groceries" hidden>
       <div class="grocery-layout">
         <div class="grocery-section"><h2>Selected Meals</h2><div id="grocery-meals"></div></div>
         <div class="grocery-section"><h2>Shopping List</h2><p class="muted">Ingredient lists will be available after the recipes are verified. Nothing has been added to a shopping cart.</p></div>

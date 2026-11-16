@@ -23,7 +23,7 @@ This is the original mockup **as first presented**, before the explicitly approv
 2. **Mobile title must be smaller** and visually proportionate; the original large website rendition was explicitly rejected. Current mobile title scales 28–35 px; the italic `Le` is 32 px. Preserve the original Didot/Bodoni style and relative hierarchy.
 3. **Remove the oversized "Dinner Ideas" heading.** Do not add a second hero/intro heading beneath the primary wordmark. A quiet week/date label and cards suffice.
 4. **Favicon and bookmark icon:** the gold `❧` flourish beneath the original wordmark, isolated as a single elegant ornament in gold on deep green. Use `favicon.svg` (vector, path-based; no runtime font needed) and `apple-touch-icon.png` (iOS Home Screen).
-5. Preserve the original light-mode cream panel `#f8f6ef`, border `#e7e0d3`, body text `#253d35`, gold italic `Le` `#b18a55`, flourish `#ae8c5a`; keep the paired thin gold rules and ample breathing room. **Later user-approved overrides:** the title panel now adapts to dark mode and spans the full site content width. In dark mode use a deep-green panel, ivory title text, and soft gold accents.
+5. Preserve the original light-mode cream panel `#f8f6ef`, border `#e7e0d3`, body text `#253d35`, gold italic `Le` `#b18a55`, flourish `#ae8c5a`; keep the paired thin gold rules and ample breathing room. **Later user-approved overrides:** the title panel now adapts to dark mode and extends to the full browser viewport width (edge to edge, not merely the constrained content container). In dark mode use a deep-green panel, ivory title text, and soft gold accents.
 6. Typography should prefer `'Didot','Bodoni 72','Baskerville',Georgia,serif` for the title and `'Bodoni 72','Didot','Baskerville',Georgia,serif` italic for `Le`. Do **not** replace with a generic modern sans-serif, bold block display, large decorative hero, or an unrelated logo.
 
 ## Review checklist — prevent visual drift
@@ -32,9 +32,10 @@ This is the original mockup **as first presented**, before the explicitly approv
 - Primary visual focus: `Le` above `Garde-Manger`; fine italic gold above dark-green fine-serif lettering.
 - Panoply label is smaller and quieter than the initial mockup.
 - Gold `❧` with a fine rule on either side under the wordmark.
-- Full-width title carrier aligns to the site's main content edges, not a narrow centered box.
+- Full-bleed title carrier spans the actual browser viewport edge to edge, without the horizontal gutters of the main content container. Keep the tabs and recipe cards aligned to the normal content container.
 - Match the device's light/dark appearance for the entire page including the title carrier, while preserving the original light-mode styling.
 - No oversized “Dinner Ideas” or redundant explanatory banner above meal cards.
+- No oversized repeated “Saved Recipes” or “Groceries” titles below those tab labels; omit the Apple News and Meal Planning section labels. Do not add unrequested text or decorative headings.
 - Preserve the compact three-across desktop recipe cards and authentic publisher photography.
 - Do not alter the user's selected meals or localStorage key during a purely visual update.
 - The GitHub repository may remain named `The-Pantry` while the public website is titled `Le Garde-Manger`.
@@ -47,3 +48,5 @@ This is the original mockup **as first presented**, before the explicitly approv
 
 
 - 2026-11-15: Owner rejected the narrow centered title carrier and appearance mismatch; approved full content-width title panel and consistent device-responsive dark-mode treatment. The original mockup remains preserved above as history.
+
+- 2026-11-15: Owner clarified the title carrier must reach both browser edges; the previous 100%-of-container implementation was incorrect. Removed the extra Saved Recipes/Groceries heading blocks, Apple News/Meal Planning labels, and redundant Apple News note at the owner's request.
