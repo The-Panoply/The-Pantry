@@ -61,76 +61,487 @@
   ],
   "savedRecipes": [
     {
+      "id": "HC001",
+      "title": "Mozzarella-Stuffed Beef Meatloaf",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC002",
+      "title": "One-Pan Beef Enchilada Skillet",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC003",
+      "title": "Italian Sausage Grinders",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC004",
+      "title": "Tilapia Piccata",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC005",
+      "title": "Garlic Beurre Blanc Trout",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC006",
+      "title": "One-Pot Sausage and Kale Pasta e Fagioli",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC007",
+      "title": "Beefy Empanada Rice Bowl",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC008",
+      "title": "Italian-Style Wedding Soup with Sausage",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC009",
+      "title": "Chicken Breast with Cilantro Butter",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC010",
+      "title": "Hickory and Brown Sugar BBQ Beef Meatloaf",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC011",
+      "title": "Fettuccine Arrabbiata with Italian Sausage",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC012",
+      "title": "Garlic and Lemon Salmon",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC013",
+      "title": "Crispy Chipotle Beef Tacos",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC014",
+      "title": "Crispy Pork Chop Milanese",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC015",
+      "title": "Italian-Style Pork Meatballs",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC016",
+      "title": "Beef & Poblano Tamale Pie",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC017",
+      "title": "Hot Honey Bacon-Crusted Chicken",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC018",
+      "title": "Garlic Sesame Pork Rice Bowl",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC019",
+      "title": "One-Pot Italian Sausage Minestrone-Style Soup",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC020",
+      "title": "Parmesan-Crusted Chicken Cutlet Pasta",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC021",
+      "title": "One-Pan Beef Enchilada Pasta",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC022",
+      "title": "Korean-Style Fried Chicken — cheesy corn",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC023",
+      "title": "Italian-Style Sausage Zuppa Toscana",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC024",
+      "title": "Korean-Style BBQ Salmon Rice Bowl",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC025",
+      "title": "Italian-Style Parmesan Fried Chicken",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC026",
+      "title": "Scallops and Lemon Parmesan Risotto",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC027",
+      "title": "Bacon Honey Mustard Chicken",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC028",
+      "title": "Beef Egg Roll Rice Bowl",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC029",
+      "title": "One-Pan Weeknight Beef Enchilada Skillet",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC030",
+      "title": "Chicken Empanada Bowl",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC031",
+      "title": "Italian Sausage Pasta with Brussels Sprouts",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC032",
+      "title": "Baked Italian Sausage Farfalle",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC033",
+      "title": "Spanakopita Quesadillas",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC034",
+      "title": "Sweet Chili Pork Lettuce Wraps with Crispy Rice Noodles",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC035",
+      "title": "Honey-Ginger Chicken Katsu",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC036",
+      "title": "Basil Pesto Salmon",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC037",
+      "title": "Spicy Spaghetti Arrabiata with Italian Sausage",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC038",
+      "title": "One-Pot Chicken and Poblano Corn Chowder",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC039",
+      "title": "Asian Turkey Lettuce Wraps",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC040",
+      "title": "Classic Chicken Piccata",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC041",
+      "title": "Thai Weeping Tiger Beef Meatballs",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC042",
+      "title": "Hot Honey Salmon",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC043",
+      "title": "Sweet Teriyaki Pork Lo Mein",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC044",
+      "title": "Indulgent One-Skillet Kale Chicken",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC045",
+      "title": "Roasted Salmon and Horseradish Cream",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC046",
+      "title": "Mushroom and Swiss Beef Cavatappi with Bacon and Green Onions",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC047",
+      "title": "Weeknight Italian Sausage Lasagna",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC048",
+      "title": "Scallops and Parmesan-Garlic Risotto",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC049",
+      "title": "Rosemary Crusted Steak and Red Wine Demi",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC050",
+      "title": "Japanese Steak Tacos with Sriracha Slaw",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC051",
+      "title": "Cornbread-Crusted Mahi-Mahi and Honey-BBQ Aioli",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC052",
+      "title": "Salmon Tacos",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC053",
+      "title": "Hawaiian BBQ Chicken Thigh Mini Flatbreads",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC054",
+      "title": "Hoisin Pulled Pork with Jasmine Rice",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC055",
+      "title": "Shrimp Scampi Florentine Pasta",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC056",
+      "title": "Scallop Rockefeller Risotto",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
+      "id": "HC057",
+      "title": "Korean-Style Fried Chicken — edamame rice",
+      "publisher": "Home Chef",
+      "collection": "home-chef-favorites",
+      "savedFrom": "Home Chef favorites screenshots"
+    },
+    {
       "id": "AN001",
       "title": "Our Best Jambalaya",
       "publisher": "Southern Living",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN002",
       "title": "Creamy Tuscan Chicken",
       "publisher": "Simply Recipes",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN003",
       "title": "Grilled BBQ Chicken",
       "publisher": "Southern Living",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN004",
       "title": "Smoked Whole Chicken",
       "publisher": "Allrecipes",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN005",
       "title": "Pollo a la Brasa With Aji Verde",
       "publisher": "The Washington Post",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN006",
       "title": "Peruvian-Style Roast Chicken with Tangy Green Sauce",
       "publisher": "Epicurious",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN007",
       "title": "Peruvian-Style Grilled Chicken With Green Sauce Recipe",
       "publisher": "Serious Eats",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN008",
       "title": "Chicken And Sausage Jambalaya",
       "publisher": "Southern Living",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN009",
       "title": "Simple Grilled Steak Fajitas",
       "publisher": "Taste of Home",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN010",
       "title": "Grilled Chicken Fajitas",
       "publisher": "Allrecipes",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN011",
       "title": "Cuban-Style Black Beans and Rice",
       "publisher": "EatingWell",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     },
     {
       "id": "AN012",
       "title": "Grilled Chicken and Sausage Jambalaya Recipe",
       "publisher": "Serious Eats",
-      "savedFrom": "Apple News"
+      "savedFrom": "Apple News",
+      "collection": "apple-news"
     }
   ]
 }
