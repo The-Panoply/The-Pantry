@@ -54,6 +54,11 @@
       </section>
     </section>
     <section id="panel-saved" class="panel" aria-label="Saved Recipes" hidden>
+      <div class="saved-collections" role="group" aria-label="Recipe collections">
+        <button type="button" class="collection-filter active" data-collection="home-chef-favorites" aria-pressed="true">Home Chef Favorites <span class="collection-total" id="home-chef-count"></span></button>
+        <button type="button" class="collection-filter" data-collection="apple-news" aria-pressed="false">Apple News <span class="collection-total" id="apple-news-count"></span></button>
+        <button type="button" class="collection-filter" data-collection="all" aria-pressed="false">All <span class="collection-total" id="all-saved-count"></span></button>
+      </div>
       <div class="saved-tools">
         <label class="visually-hidden" for="saved-search">Search recipes</label>
         <input id="saved-search" type="search" placeholder="Search recipes" autocomplete="off">
