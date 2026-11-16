@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfaf6">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c211e">
-  <meta name="description" content="The Pantry — recipes, weekly meals, and groceries.">
-  <title>The Pantry — The Panoply</title>
+  <meta name="description" content="Le Garde-Manger — recipes, weekly meals, and groceries.">
+  <title>Le Garde-Manger — The Panoply</title>
+  <meta name="apple-mobile-web-app-title" content="Garde-Manger">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
@@ -16,11 +17,14 @@
   <a class="skip" href="#main">Skip to meals</a>
   <header class="masthead">
     <div class="shell">
-      <a class="panoply-label" href="https://github.com/The-Panoply" aria-label="The Panoply">THE PANOPLY</a>
-      <div class="brand-row">
-        <div class="wordmark"><span class="wordmark-the">The</span> <span>Pantry</span><span class="brand-dot">.</span></div>
+      <div class="brand-panel">
+        <a class="panoply-label" href="https://github.com/The-Panoply" aria-label="The Panoply">THE PANOPLY</a>
+        <div class="wordmark" aria-label="Le Garde-Manger">
+          <span class="wordmark-le" aria-hidden="true">Le</span>
+          <span class="wordmark-name" aria-hidden="true">Garde-Manger</span>
+        </div>
+        <div class="ornament" aria-hidden="true"><span class="ornament-rule"></span><span class="ornament-flourish">❧</span><span class="ornament-rule"></span></div>
       </div>
-      <div class="gold-rule" aria-hidden="true"></div>
       <nav class="tabs" aria-label="Pantry sections">
         <button type="button" class="tab active" data-tab="week" aria-current="page">This Week</button>
         <button type="button" class="tab" data-tab="saved">Saved Recipes</button>
@@ -71,6 +75,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer shell"><span>THE PANOPLY</span><span>The Pantry</span></footer>
+  <footer class="footer shell"><span>THE PANOPLY</span><span>Le Garde-Manger</span></footer>
 </body>
 </html>

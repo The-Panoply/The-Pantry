@@ -1,7 +1,7 @@
 {
-  "name": "The Pantry",
-  "short_name": "Pantry",
-  "description": "Recipes and weekly meals",
+  "name": "Le Garde-Manger",
+  "short_name": "Garde-Manger",
+  "description": "Recipes and weekly meals at Le Garde-Manger",
   "id": "./",
   "start_url": "./",
   "scope": "./",

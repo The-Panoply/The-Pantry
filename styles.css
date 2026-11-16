@@ -9,14 +9,17 @@
 button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 a{color:inherit}.shell{width:min(1180px,calc(100% - 44px));margin-inline:auto}
 .skip{position:absolute;left:-9999px;top:10px;z-index:10;background:#fff;padding:10px}.skip:focus{left:10px}
-.masthead{border-bottom:1px solid var(--line);background:var(--card);padding-top:24px}
-.panoply-label{font-size:10px;letter-spacing:.22em;font-weight:750;color:var(--gold);text-decoration:none}
-.brand-row{display:flex;align-items:center;justify-content:space-between;margin:9px 0 12px}
-.wordmark{font:400 clamp(55px,8vw,83px)/.98 var(--serif);letter-spacing:-.055em;white-space:nowrap}
-.wordmark-the{display:inline-block;font-size:.38em;font-style:italic;letter-spacing:-.025em;vertical-align:27%;margin-right:3px}
-.brand-dot{color:var(--gold)}
-.gold-rule{height:2px;width:48px;background:var(--gold);margin-bottom:17px}
-.tabs{display:flex;align-items:center;gap:clamp(20px,3vw,38px);overflow:auto;scrollbar-width:none}
+.masthead{border-bottom:1px solid var(--line);background:var(--card);padding-top:20px}
+.brand-panel{width:min(100%,740px);margin:0 auto 15px;padding:28px 16px 24px;text-align:center;background:#f8f6ef;color:#253d35;border:1px solid #e7e0d3;border-radius:13px}
+.panoply-label{display:block;width:max-content;margin:0 auto 21px;font:600 8px/1.5 var(--sans);letter-spacing:3.7px;color:rgba(171,137,87,.55);text-decoration:none}
+.panoply-label:hover{color:#ab8957}
+.wordmark{display:flex;flex-direction:column;align-items:center;white-space:nowrap}
+.wordmark-le{display:block;font:italic 40px/1 "Bodoni 72","Didot","Baskerville",Georgia,serif;color:#b18a55;margin-bottom:-4px}
+.wordmark-name{display:block;font:400 clamp(36px,7.4vw,68px)/1.12 "Didot","Bodoni 72","Baskerville",Georgia,serif;letter-spacing:-1.5px;color:#253d35}
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px;color:#ae8c5a}
+.ornament-rule{width:64px;height:1px;background:#c9ae82}
+.ornament-flourish{font:25px/1 Georgia,serif}
+.tabs{display:flex;align-items:center;justify-content:center;gap:clamp(20px,3vw,38px);overflow:auto;scrollbar-width:none}
 .tab{flex:none;padding:11px 0 14px;border:0;border-bottom:2px solid transparent;color:var(--muted);background:transparent;font-size:13px}
 .tab.active{border-bottom-color:var(--gold);color:var(--ink);font-weight:700}
 .panel{padding:35px 0 60px}.panel[hidden]{display:none}
@@ -63,9 +66,11 @@ a.recipe-publisher:hover{text-decoration:underline}
 .grocery-section ul{margin:0;padding:0 0 0 19px;font-size:13px;line-height:2}
 .footer{border-top:1px solid var(--line);padding-block:19px 35px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted)}.footer span:first-child{letter-spacing:.2em;color:var(--gold);font-weight:750}
 @media(max-width:850px){.recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:570px){.shell{width:calc(100% - 34px)}.masthead{padding-top:18px}.wordmark{font-size:clamp(49px,12vw,65px)}.panel{padding-top:27px}.section-heading{align-items:center}.recipe-grid,.saved-list,.grocery-layout{grid-template-columns:1fr}.recipe-photo{aspect-ratio:1.65}.recipe-title{font-size:23px}.recipe-card{border-radius:12px}.recipe-body{padding:13px}.selection-count strong{font-size:24px}}
+@media(max-width:570px){.shell{width:calc(100% - 34px)}.masthead{padding-top:14px}.brand-panel{padding:25px 9px 21px;margin-bottom:11px}.panoply-label{font-size:7px;letter-spacing:3px;margin-bottom:18px}.wordmark-le{font-size:38px}.wordmark-name{font-size:clamp(33px,9.3vw,48px);letter-spacing:-1.2px}.ornament{margin-top:16px}.ornament-rule{width:50px}.tabs{justify-content:flex-start}.panel{padding-top:27px}.section-heading{align-items:center}.recipe-grid,.saved-list,.grocery-layout{grid-template-columns:1fr}.recipe-photo{aspect-ratio:1.65}.recipe-title{font-size:23px}.recipe-card{border-radius:12px}.recipe-body{padding:13px}.selection-count strong{font-size:24px}}
 @media(prefers-color-scheme:dark){
 :root{color-scheme:dark;--paper:#1c211e;--card:#252d27;--ink:#e7ebe5;--muted:#a9b6a9;--line:#465047;--gold:#d4b985;--accent:#9fc7a8;--accent-soft:#283d30;--placeholder:#313a31}
+/* The approved cream wordmark panel retains its exact colors in both themes. */
+.brand-panel{background:#f8f6ef;color:#253d35;border-color:#e7e0d3}
 .pick-button{background:#2b372d;color:var(--ink);border-color:#617566}.pick-button.is-selected{background:#3b7151;color:#fff;border-color:#6aa783}
 .photo-pending{color:#b9c4b8}.photo-pending svg{stroke:#8d9a8b}
 }
