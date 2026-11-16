@@ -56,6 +56,11 @@ a.recipe-publisher:hover{text-decoration:underline}
 .text-action{background:transparent;border:0;padding:5px 0;color:var(--accent);font-size:12px;text-decoration:underline}
 .picked-items{display:flex;flex-wrap:wrap;gap:9px}.picked-chip{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 13px;font-size:12px}
 .empty-state,.muted{font-size:13px;color:var(--muted);margin:8px 0}
+.saved-collections{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 17px}
+.collection-filter{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:var(--muted);font-size:12px;font-weight:650;white-space:nowrap}
+.collection-filter:hover{border-color:var(--gold);color:var(--ink)}
+.collection-filter.active{border-color:var(--gold);background:var(--accent-soft);color:var(--ink)}
+.collection-total{font-size:11px;font-weight:500;margin-left:4px;opacity:.75}
 .saved-tools{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:-1px 0 18px}
 .saved-tools input,.saved-tools select{height:38px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:0 11px;color:var(--ink);font-size:12px}
 .saved-tools input{flex:1 1 220px;max-width:330px}.saved-tools select{max-width:220px}.saved-count{font-size:11px;color:var(--muted)}
