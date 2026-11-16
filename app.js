@@ -17,18 +17,21 @@ function plateGraphic(){
 }
 function makeCard(recipe){
  var card=node("article","recipe-card");
- var source=node("div","recipe-source");
- source.appendChild(node("span","source-bullet","✦"));
- source.appendChild(node("span",null,recipe.publisher||"Recipe source pending"));
- card.appendChild(source);
- var photo=node("div","recipe-photo");
+ var photo=node(recipe.sourceUrl?"a":"div","recipe-photo");
+ if(recipe.sourceUrl){photo.href=recipe.sourceUrl;photo.target="_blank";photo.rel="noopener noreferrer";photo.setAttribute("aria-label","View original recipe: "+recipe.title)}
  if(recipe.imageUrl&&recipe.imageStatus==="verified"){
-  var img=node("img");img.src=recipe.imageUrl;img.alt=recipe.title;img.loading="lazy";img.addEventListener("error",function(){photo.replaceChildren(plateGraphic())});
+  var img=node("img");img.src=recipe.imageUrl;img.alt=recipe.title;img.loading="lazy";img.referrerPolicy="no-referrer";
+  img.addEventListener("error",function(){photo.replaceChildren(plateGraphic())});
   photo.appendChild(img);
  }else photo.appendChild(plateGraphic());
  card.appendChild(photo);
  var body=node("div","recipe-body");
- body.appendChild(node("p","recipe-category",recipe.category||"Recipe"));
+ var labels=node("div","recipe-labels");
+ labels.appendChild(node("span","recipe-category",recipe.category||"Recipe"));
+ var publisher=node(recipe.publisherUrl?"a":"span","recipe-publisher",recipe.publisher||"Source pending");
+ if(recipe.publisherUrl){publisher.href=recipe.publisherUrl;publisher.target="_blank";publisher.rel="noopener noreferrer"}
+ labels.appendChild(publisher);
+ body.appendChild(labels);
  body.appendChild(node("h2","recipe-title",recipe.title));
  if(recipe.description)body.appendChild(node("p","recipe-desc",recipe.description));
  var meta=node("div","recipe-meta");
@@ -74,12 +77,23 @@ function render(){
 function renderSaved(){
  var list=byId("saved-list");list.replaceChildren();
  var recipes=state.data.savedRecipes||[];
- if(!recipes.length){list.appendChild(node("p","empty-state","No saved recipes yet."));return}
- recipes.forEach(function(r){var row=node("div","saved-row");
+ var query=byId("saved-search").value.trim().toLowerCase();
+ var source=byId("saved-publisher").value;
+ var found=recipes.filter(function(r){return (!source||r.publisher===source)&&(!query||(r.title+" "+r.publisher).toLowerCase().includes(query))});
+ setText("saved-count",found.length+" of "+recipes.length);
+ if(!found.length){list.appendChild(node("p","empty-state","No matching recipes."));return}
+ found.forEach(function(r){var row=node("div","saved-row");
   row.appendChild(node("h2",null,r.title));
-  row.appendChild(node("div","saved-meta",r.publisher||"Original publisher unverified"));list.appendChild(row);
+  row.appendChild(node("div","saved-meta",(r.publisher||"Original publisher unverified")+" · Saved to try"));list.appendChild(row);
  });
 }
+function setupSavedFilters(){
+ var box=byId("saved-publisher"),seen=Object.create(null);
+ (state.data.savedRecipes||[]).forEach(function(r){if(r.publisher)seen[r.publisher]=true});
+ Object.keys(seen).sort().forEach(function(name){var opt=node("option",null,name);opt.value=name;box.appendChild(opt)});
+}
+byId("saved-search").addEventListener("input",function(){if(state.data)renderSaved()});
+byId("saved-publisher").addEventListener("change",function(){if(state.data)renderSaved()});
 function tab(name){
  document.querySelectorAll(".tab").forEach(function(t){var active=t.dataset.tab===name;t.classList.toggle("active",active);if(active)t.setAttribute("aria-current","page");else t.removeAttribute("aria-current")});
  document.querySelectorAll("main > section.panel").forEach(function(p){p.hidden=p.id!=="panel-"+name});
@@ -91,7 +105,7 @@ fetch("./recipes.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw Error
  state.data=data;setText("week-label",data.week.label||"WEEKLY MENU");loadPicks(data.week.id);
  // Never retain picks for recipes that are no longer in the current menu.
  state.picks=state.picks.filter(function(id){return data.recipes.some(function(r){return r.id===id})});
- render();renderSaved();
+ render();setupSavedFilters();renderSaved();
 }).catch(function(){
  byId("recipe-grid").replaceChildren(node("p","empty-state","Meal data is unavailable. Please reload."));
  byId("saved-list").replaceChildren(node("p","empty-state","Saved recipes are unavailable."));

@@ -33,11 +33,10 @@
       <div class="section-heading">
         <div>
           <p id="week-label" class="eyebrow"></p>
-          <h1 id="week-heading">This Week</h1>
+          <h1 id="week-heading">Dinner Ideas</h1>
         </div>
         <div class="selection-count"><strong id="pick-count">0</strong><span>selected</span></div>
       </div>
-      <p class="prototype-notice">Design preview — recipe photographs and details are being verified.</p>
       <div id="recipe-grid" class="recipe-grid" aria-live="polite"></div>
       <section class="your-menu" aria-labelledby="menu-heading">
         <div class="menu-heading">
@@ -53,6 +52,13 @@
     <section id="panel-saved" class="panel" aria-labelledby="saved-heading" hidden>
       <div class="section-heading">
         <div><p class="eyebrow">APPLE NEWS</p><h1 id="saved-heading">Saved Recipes</h1></div>
+      </div>
+      <div class="saved-tools">
+        <label class="visually-hidden" for="saved-search">Search recipes</label>
+        <input id="saved-search" type="search" placeholder="Search recipes" autocomplete="off">
+        <label class="visually-hidden" for="saved-publisher">Filter by publisher</label>
+        <select id="saved-publisher" aria-label="Publisher"><option value="">All publishers</option></select>
+        <span id="saved-count" class="saved-count"></span>
       </div>
       <div id="saved-list" class="saved-list"></div>
       <p class="fineprint">Saved from Apple News. A saved recipe does not mean it has been cooked or family-approved.</p>
