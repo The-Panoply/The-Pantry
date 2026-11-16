@@ -32,7 +32,7 @@ This is the original mockup **as first presented**, before the explicitly approv
 - Primary visual focus: `Le` above `Garde-Manger`; fine italic gold above dark-green fine-serif lettering.
 - Panoply label is smaller and quieter than the initial mockup.
 - Gold `❧` with a fine rule on either side under the wordmark.
-- Full-bleed title carrier spans the actual browser viewport edge to edge, without the horizontal gutters of the main content container. Keep the tabs and recipe cards aligned to the normal content container.
+- Full-bleed title carrier spans the actual browser viewport edge to edge, without the horizontal gutters of the main content container. Keep the tabs and recipe cards aligned to the normal content container. Do not draw a horizontal top border above the wordmark panel; retain its bottom border and the approved gold ornament beneath the name.
 - Match the device's light/dark appearance for the entire page including the title carrier, while preserving the original light-mode styling.
 - No oversized “Dinner Ideas” or redundant explanatory banner above meal cards.
 - No oversized repeated “Saved Recipes” or “Groceries” titles below those tab labels; omit the Apple News and Meal Planning section labels. Do not add unrequested text or decorative headings.
@@ -50,3 +50,5 @@ This is the original mockup **as first presented**, before the explicitly approv
 - 2026-11-15: Owner rejected the narrow centered title carrier and appearance mismatch; approved full content-width title panel and consistent device-responsive dark-mode treatment. The original mockup remains preserved above as history.
 
 - 2026-11-15: Owner clarified the title carrier must reach both browser edges; the previous 100%-of-container implementation was incorrect. Removed the extra Saved Recipes/Groceries heading blocks, Apple News/Meal Planning labels, and redundant Apple News note at the owner's request.
+
+- 2026-11-15 (late evening): Removed the thin top horizontal border from the full-width wordmark carrier while preserving the bottom border and gold flourish; followed the Principal's last-requested visual adjustment.
