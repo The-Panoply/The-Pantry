@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "week": {
+    "id": "preview-2026-11-16",
+    "label": "November 16–22, 2026",
+    "status": "design-preview",
+    "targetMeals": 3
+  },
+  "recipes": [
+    {
+      "id": "preview-honey-garlic-chicken",
+      "title": "Honey Garlic Chicken",
+      "publisher": "RecipeTin Eats",
+      "category": "Chicken",
+      "description": "Pan-seared chicken with a honey-garlic sauce.",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "ratingAverage": null,
+      "ratingCount": null,
+      "sourceUrl": null,
+      "imageUrl": null,
+      "imageStatus": "unverified",
+      "reviewStatus": "not-vetted"
+    },
+    {
+      "id": "preview-beef-stroganoff",
+      "title": "Beef Stroganoff",
+      "publisher": "RecipeTin Eats",
+      "category": "Comfort Food",
+      "description": "Tender beef and mushrooms in a creamy sauce.",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "ratingAverage": null,
+      "ratingCount": null,
+      "sourceUrl": null,
+      "imageUrl": null,
+      "imageStatus": "unverified",
+      "reviewStatus": "not-vetted"
+    },
+    {
+      "id": "preview-chicken-shawarma",
+      "title": "Chicken Shawarma",
+      "publisher": "The Mediterranean Dish",
+      "category": "Chicken",
+      "description": "Spiced chicken served with pita and fresh toppings.",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "ratingAverage": null,
+      "ratingCount": null,
+      "sourceUrl": null,
+      "imageUrl": null,
+      "imageStatus": "unverified",
+      "reviewStatus": "not-vetted"
+    }
+  ],
+  "savedRecipes": [
+    {
+      "id": "AN001",
+      "title": "Our Best Jambalaya",
+      "publisher": "Southern Living",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN002",
+      "title": "Creamy Tuscan Chicken",
+      "publisher": "Simply Recipes",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN003",
+      "title": "Grilled BBQ Chicken",
+      "publisher": "Southern Living",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN004",
+      "title": "Smoked Whole Chicken",
+      "publisher": "Allrecipes",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN005",
+      "title": "Pollo a la Brasa With Aji Verde",
+      "publisher": "The Washington Post",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN006",
+      "title": "Peruvian-Style Roast Chicken with Tangy Green Sauce",
+      "publisher": "Epicurious",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN007",
+      "title": "Peruvian-Style Grilled Chicken With Green Sauce Recipe",
+      "publisher": "Serious Eats",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN008",
+      "title": "Chicken And Sausage Jambalaya",
+      "publisher": "Southern Living",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN009",
+      "title": "Simple Grilled Steak Fajitas",
+      "publisher": "Taste of Home",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN010",
+      "title": "Grilled Chicken Fajitas",
+      "publisher": "Allrecipes",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN011",
+      "title": "Cuban-Style Black Beans and Rice",
+      "publisher": "EatingWell",
+      "savedFrom": "Apple News"
+    },
+    {
+      "id": "AN012",
+      "title": "Grilled Chicken and Sausage Jambalaya Recipe",
+      "publisher": "Serious Eats",
+      "savedFrom": "Apple News"
+    }
+  ]
+}

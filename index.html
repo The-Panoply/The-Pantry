@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfaf6">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c211e">
+  <meta name="description" content="The Pantry — recipes, weekly meals, and groceries.">
+  <title>The Pantry — The Panoply</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to meals</a>
+  <header class="masthead">
+    <div class="shell">
+      <a class="panoply-label" href="https://github.com/The-Panoply" aria-label="The Panoply">THE PANOPLY</a>
+      <div class="brand-row">
+        <div class="wordmark"><span class="wordmark-the">The</span> <span>Pantry</span><span class="brand-dot">.</span></div>
+      </div>
+      <div class="gold-rule" aria-hidden="true"></div>
+      <nav class="tabs" aria-label="Pantry sections">
+        <button type="button" class="tab active" data-tab="week" aria-current="page">This Week</button>
+        <button type="button" class="tab" data-tab="saved">Saved Recipes</button>
+        <button type="button" class="tab" data-tab="groceries">Groceries</button>
+      </nav>
+    </div>
+  </header>
+  <main class="shell" id="main">
+    <section id="panel-week" class="panel" aria-labelledby="week-heading">
+      <div class="section-heading">
+        <div>
+          <p id="week-label" class="eyebrow"></p>
+          <h1 id="week-heading">This Week</h1>
+        </div>
+        <div class="selection-count"><strong id="pick-count">0</strong><span>selected</span></div>
+      </div>
+      <p class="prototype-notice">Design preview — recipe photographs and details are being verified.</p>
+      <div id="recipe-grid" class="recipe-grid" aria-live="polite"></div>
+      <section class="your-menu" aria-labelledby="menu-heading">
+        <div class="menu-heading">
+          <div>
+            <h2 id="menu-heading">Your Menu</h2>
+            <p>Chosen dinners appear here.</p>
+          </div>
+          <button type="button" id="clear-picks" class="text-action" hidden>Clear</button>
+        </div>
+        <div id="selected-list" aria-live="polite"><p class="empty-state">No meals selected.</p></div>
+      </section>
+    </section>
+    <section id="panel-saved" class="panel" aria-labelledby="saved-heading" hidden>
+      <div class="section-heading">
+        <div><p class="eyebrow">APPLE NEWS</p><h1 id="saved-heading">Saved Recipes</h1></div>
+      </div>
+      <div id="saved-list" class="saved-list"></div>
+      <p class="fineprint">Saved from Apple News. A saved recipe does not mean it has been cooked or family-approved.</p>
+    </section>
+    <section id="panel-groceries" class="panel" aria-labelledby="grocery-heading" hidden>
+      <div class="section-heading"><div><p class="eyebrow">MEAL PLANNING</p><h1 id="grocery-heading">Groceries</h1></div></div>
+      <div class="grocery-layout">
+        <div class="grocery-section"><h2>Selected Meals</h2><div id="grocery-meals"></div></div>
+        <div class="grocery-section"><h2>Shopping List</h2><p class="muted">Ingredient lists will be available after the recipes are verified. Nothing has been added to a shopping cart.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><span>THE PANOPLY</span><span>The Pantry</span></footer>
+</body>
+</html>
