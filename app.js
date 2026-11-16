@@ -74,24 +74,45 @@ function render(){
  }
  byId("clear-picks").hidden=!selected.length;
 }
+function selectedCollection(){
+ var active=document.querySelector(".collection-filter.active");
+ return active?active.dataset.collection:"all";
+}
 function renderSaved(){
  var list=byId("saved-list");list.replaceChildren();
  var recipes=state.data.savedRecipes||[];
  var query=byId("saved-search").value.trim().toLowerCase();
  var source=byId("saved-publisher").value;
- var found=recipes.filter(function(r){return (!source||r.publisher===source)&&(!query||(r.title+" "+r.publisher).toLowerCase().includes(query))});
- setText("saved-count",found.length+" of "+recipes.length);
+ var collection=selectedCollection();
+ var collectionRecipes=recipes.filter(function(r){return collection==="all"||r.collection===collection});
+ var found=collectionRecipes.filter(function(r){return (!source||r.publisher===source)&&(!query||(r.title+" "+(r.publisher||"")).toLowerCase().includes(query))});
+ setText("saved-count",found.length+" of "+collectionRecipes.length);
  if(!found.length){list.appendChild(node("p","empty-state","No matching recipes."));return}
- found.forEach(function(r){var row=node("div","saved-row");
+ found.forEach(function(r){
+  var row=node("div","saved-row");
   row.appendChild(node("h2",null,r.title));
-  row.appendChild(node("div","saved-meta",(r.publisher||"Original publisher unverified")+" · Saved to try"));list.appendChild(row);
+  var details=r.collection==="home-chef-favorites"?"Home Chef · Favorited recipe":(r.publisher||"Original publisher unverified")+" · Saved from Apple News";
+  row.appendChild(node("div","saved-meta",details));list.appendChild(row);
  });
 }
 function setupSavedFilters(){
  var box=byId("saved-publisher"),seen=Object.create(null);
- (state.data.savedRecipes||[]).forEach(function(r){if(r.publisher)seen[r.publisher]=true});
+ var recipes=state.data.savedRecipes||[];
+ recipes.forEach(function(r){if(r.publisher)seen[r.publisher]=true});
  Object.keys(seen).sort().forEach(function(name){var opt=node("option",null,name);opt.value=name;box.appendChild(opt)});
+ setText("home-chef-count",recipes.filter(function(r){return r.collection==="home-chef-favorites"}).length);
+ setText("apple-news-count",recipes.filter(function(r){return r.collection==="apple-news"}).length);
+ setText("all-saved-count",recipes.length);
 }
+document.querySelectorAll(".collection-filter").forEach(function(button){
+ button.addEventListener("click",function(){
+  document.querySelectorAll(".collection-filter").forEach(function(b){
+   var active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",active?"true":"false");
+  });
+  byId("saved-publisher").value="";
+  if(state.data)renderSaved();
+ });
+});
 byId("saved-search").addEventListener("input",function(){if(state.data)renderSaved()});
 byId("saved-publisher").addEventListener("change",function(){if(state.data)renderSaved()});
 function tab(name){
