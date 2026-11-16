@@ -12,7 +12,7 @@ a{color:inherit}.shell{width:min(1180px,calc(100% - 44px));margin-inline:auto}
 .masthead{border-bottom:1px solid var(--line);background:var(--card);padding-top:17px}
 /* Full-bleed title carrier; all other page sections retain their regular shell width. */
 .masthead > .shell{width:100%;max-width:none;margin-inline:0}
-.brand-panel{width:100%;margin:0 0 12px;padding:28px 16px 22px;text-align:center;background:#f8f6ef;color:#253d35;border-top:1px solid #e7e0d3;border-bottom:1px solid #e7e0d3;border-left:0;border-right:0;border-radius:0}
+.brand-panel{width:100%;margin:0 0 12px;padding:28px 16px 22px;text-align:center;background:#f8f6ef;color:#253d35;border-top:0;border-bottom:1px solid #e7e0d3;border-left:0;border-right:0;border-radius:0}
 .panoply-label{display:block;width:max-content;margin:0 auto 21px;font:600 6.5px/1.5 var(--sans);letter-spacing:3.2px;color:rgba(171,137,87,.43);text-decoration:none}
 .panoply-label:hover{color:#ab8957}
 .wordmark{display:flex;flex-direction:column;align-items:center;white-space:nowrap;margin:0}
