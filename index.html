@@ -9,6 +9,7 @@
   <title>Le Garde-Manger — The Panoply</title>
   <meta name="apple-mobile-web-app-title" content="Garde-Manger">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./app.js"></script>
@@ -19,10 +20,10 @@
     <div class="shell">
       <div class="brand-panel">
         <a class="panoply-label" href="https://github.com/The-Panoply" aria-label="The Panoply">THE PANOPLY</a>
-        <div class="wordmark" aria-label="Le Garde-Manger">
+        <h1 class="wordmark" aria-label="Le Garde-Manger">
           <span class="wordmark-le" aria-hidden="true">Le</span>
           <span class="wordmark-name" aria-hidden="true">Garde-Manger</span>
-        </div>
+        </h1>
         <div class="ornament" aria-hidden="true"><span class="ornament-rule"></span><span class="ornament-flourish">❧</span><span class="ornament-rule"></span></div>
       </div>
       <nav class="tabs" aria-label="Pantry sections">
@@ -33,11 +34,10 @@
     </div>
   </header>
   <main class="shell" id="main">
-    <section id="panel-week" class="panel" aria-labelledby="week-heading">
+    <section id="panel-week" class="panel" aria-labelledby="week-label">
       <div class="section-heading">
         <div>
           <p id="week-label" class="eyebrow"></p>
-          <h1 id="week-heading">Dinner Ideas</h1>
         </div>
         <div class="selection-count"><strong id="pick-count">0</strong><span>selected</span></div>
       </div>

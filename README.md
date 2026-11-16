@@ -6,6 +6,10 @@ Le Garde-Manger (repository: The-Pantry) is the Panoply family's lightweight mea
 
 GitHub Pages: https://the-panoply.github.io/The-Pantry/
 
+## Approved design baseline
+
+**Do not change the Le Garde-Manger wordmark without checking the user-approved [design baseline](design/BRAND_BASELINE.md) and [renderable reference](design/approved-wordmark.html).** The original mockup and its two explicit corrections are preserved there.
+
 ## Files
 
 - `index.html`, `styles.css`, `app.js`: website layout and interactions.
